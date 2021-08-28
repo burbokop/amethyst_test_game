@@ -5,10 +5,11 @@ authors = ["Amethyst Foundation <contact@amethyst.rs>"]
 edition = "2018"
 
 [[bin]]
-path = "main.rs"
+path = "src/main.rs"
 name = "hello_world"
 
 [dependencies]
+rustc_version_runtime = "0.1.*"
 amethyst = { version = "0.15.3", features = ["vulkan"] }
 log = { version = "^0.4", features = ["serde"] }
 serde = "^1"
